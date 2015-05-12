@@ -28,6 +28,20 @@
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
       <![endif]-->
+    <script type="text/javascript">
+        
+        window.onload = function () {
+ 
+            var myPhotos = new Array(
+                "images/me.jpg", "images/me2.jpg", "images/me3.png");
+ 
+            var index = Math.floor(Math.random() * myPhotos.length); // Math.floor(2.7) = 2
+ 
+            // 0~2번째 인덱스에 해당하는 이미지를 출력
+            document.getElementById("random").src = myPhotos[index];
+              
+        };
+    </script>
 </head>
   <body class="bg-fixed bg-1">
 <!--[if lt IE 7]>
@@ -75,7 +89,7 @@
                     <section class="clearfix">
                         <div class="g2">
                             <div class="photo">
-                                <img src="images/me.jpg" alt="Kyudong Park">
+                                <img id="random" src="images/me3.png" alt="Kyudong Park">
                             </div>
                             <div class="info">
                                 <h2>
