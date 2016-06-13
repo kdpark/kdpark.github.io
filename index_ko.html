@@ -6,10 +6,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Sunny Luthra - Traveller - Free Thinker - Blah Blah</title>
+  <title>박 규동</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
   <script src="js/vendor/jquery.hashchange.min.js"></script>
   <script src="js/vendor/jquery.easytabs.min.js"></script>
@@ -28,6 +28,20 @@
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
       <![endif]-->
+    <script type="text/javascript">
+        
+        window.onload = function () {
+ 
+            var myPhotos = new Array(
+                "images/me.jpg", "images/me2.jpg", "images/me3.png");
+ 
+            var index = Math.floor(Math.random() * myPhotos.length); // Math.floor(2.7) = 2
+ 
+            // 0~2번째 인덱스에 해당하는 이미지를 출력
+            document.getElementById("random").src = myPhotos[index];
+              
+        };
+    </script>
 </head>
   <body class="bg-fixed bg-1">
 <!--[if lt IE 7]>
@@ -42,7 +56,7 @@
                     박 규동
                 </h2>
                 <h4>
-                    Animator / Photographer
+                    개자이너 디발자 연구원
                 </h4>
             </div>
         </header>
@@ -52,17 +66,21 @@
           <!-- Tab List -->
             <ul class='etabs'>
                 <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                  <a href="#about"><i class="icon-user"></i><span> 저는</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                  <a href="#research"><i class="icon-file-text"></i><span> 프로젝트</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Research</span></a>
+                  <a href="#portfolio"><i class="icon-heart"></i><span> 논문</span></a>
                 </li>
+                <!-- <li class='tab'>
+                  <a href="#proejct3"><i class="icon-heart"></i><span> Project</span></a>
+                </li> -->
                 <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                  <a href="#contact"><i class="icon-envelope"></i><span> 연락처 </span></a>
                 </li>
+                
             </ul>
           <!-- End Tab List -->
             <div id="tab-data-wrap">
@@ -70,18 +88,20 @@
                 <div id="about">
                     <section class="clearfix">
                         <div class="g2">
-                            <div class="photo">
-                                <img src="images/me.jpg" alt="Sunny Luthra">
-                            </div>
+                            
                             <div class="info">
                                 <h2>
                                     박 규동
                                 </h2>
                                 <h4>
-                                    Ph.D Candidate / Creative IT Engineering
+                                    포항공대 창의IT융합공학과 <br> 
                                 </h4>
+                                <h5>
+                                    박사과정<br>
+                                </h5>
+                                <b>소개</b>
                                 <p>
-                                    We are mRova, a Pune-based software development company. We love to develop Websites, Desktop Softwares and Mobile Applications.
+                                    현재 <b><a href="http://eden.postech.ac.kr">Experience Design & Engineering 연구실</a></b> (지도교수: 한성호) 에서 기술과 사람의 접점을 연구하고 있습니다. 사람이 기술을 쫓아가지 못하는 영역에서 인간의 인지적인 한계를 밝히고자 하며, 기술이 사람을 쫓아가지 못하는 영역에서 기술의 혁신을 만들고자 합니다. 또한 우리가 궁극적으로 무엇을 원하는지 이해하는 과정 속에서, 인간에게 긍정적인 영향과 경험을 줄 수 있는 방법을 찾고 있습니다.
                                 </p>
                             </div>
                         </div>
@@ -89,16 +109,19 @@
                             <div class="main-links sidebar">
                                 <ul>
                                     <li>
-                                        <a href="#resume">View My Resume</a>
+                                        <a href="#research">수행 프로젝트</a>
                                     </li>
                                     <li>
-                                        <a href="#portfolio">My research</a>
+                                        <a href="#portfolio">논문</a>
                                     </li>
                                     <li>
-                                        <a href="#contact">Hire me for your next project</a>
+                                        <a href="#contact">연락처</a>
                                     </li>
                                     <li>
-                                        <a href="index_ko.html">한국어</a>
+                                        <a href="/index.html">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">최근 업데이트: 2016년 6월 1일</a>
                                     </li>
                                 </ul>
                             </div>
@@ -109,7 +132,7 @@
                             <div class="item-box clearfix">
                               <i class="icon-envelope"></i>
                               <div class="item-data">
-                                <h3><a href="mailto:sunny@mrova.com">sunny@mrova.com</a></h3>
+                                <h3><a href="mailto:kdpark@postech.ac.kr">kdpark(at)postech.ac.kr</a></h3>
                                 <p>Email Address</p>
                               </div>
                             </div>
@@ -118,17 +141,17 @@
                             <div class="item-box clearfix">
                               <i class="icon-facebook"></i>
                               <div class="item-data">
-                                <h3><a href="http://fb.me/luthra.sunny">luthra.sunny</a></h3>
+                                <h3><a href="http://www.facebook.com/kdpark12">kyudong.park</a></h3>
                                 <p>Facebook Profile</p>
                               </div>
                             </div>
                           </div>
                           <div class="g1">
                             <div class="item-box clearfix">
-                              <i class="icon-twitter"></i>
+                              <i class="icon-linkedin"></i>
                               <div class="item-data">
-                                <h3><a href="http://twitter.com/mRovaSolutions">@mRovaSolutions</a></h3>
-                                <p>Twitter Handle</p>
+                                <h3><a href="http://www.linkedin.com/profile/view?id=270937930">LinkedIn Profile</a></h3>
+                                <p>LinkedIn</p>
                               </div>
                             </div>
                           </div>
@@ -136,8 +159,14 @@
                     </section><!-- content -->
                 </div>
               <!-- End About Tab Data -->
+
+
+
+
+
+
               <!-- Resume Tab Data -->
-                <div id="resume">
+                <!-- <div id="resume">
                     <section class="clearfix">
                         <div class="g2">
                             <h3>
@@ -146,55 +175,72 @@
                             <ul class="no-list work">
                                 <li>
                                     <h5>
-                                        Freelance Web Designer
-                                    </h5><span class="label label-info">2009-2010</span>
+                                        Work&amp;Person Inc.
+                                    </h5><span class="label label-info">2014.02 - 2015.02</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        Technology Director<br>
+                                        Data collection & analysis
                                     </p>
                                 </li>
                                 <li>
                                     <h5>
-                                        Python Programmer
-                                    </h5><span class="label label-info">2010-2011</span>
+                                        Funsumer
+                                    </h5><span class="label label-info">2012.07 - 2013.12</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        Technology Director<br>
+                                        Funsumer is a startup company that thinks SNS of next-generations.
                                     </p>
                                 </li>
                                 <li>
                                     <h5>
-                                        Social Media Lunatic
-                                    </h5><span class="label label-info">2011-2012</span>
+                                        Redstar Ventures
+                                    </h5><span class="label label-info">2013.07 - 2013.08</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        Intern / Boston, MA, USA<br>
+                                        Redstar is a company that creates companies, taking them from the earliest stages of ideation and growing them through their first institutional funding rounds and beyond.
                                     </p>
                                 </li>
                                 <li>
                                     <h5>
-                                        Being Awesome
-                                    </h5><span class="label label-danger">2012-Till Death</span>
+                                        SAMSUNG Software Membership
+                                    </h5><span class="label label-info">2010.08 - 2013.02</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        A full time member at application SIG (Special Interest Group)
                                     </p>
                                 </li>
+                                <li>
+                                    <h5>
+                                        SAMSUNG Customer Service
+                                    </h5><span class="label label-info">2011.03 - 2011.07</span>
+                                    <p>
+                                        Intern / Sydney, NSW, Australia<br>
+                                        Experience of multiple cultures at Visiting Service<br>
+                                        Small ERP system development - TV part Management Program (Java)<br>
+                                        Implementation of Algorithm - Effective staff's visiting Schedule
+                                    </p>
+                                </li>
+                               
                             </ul>
+
+
                             <h3>
                                 Education
                             </h3>
                             <ul class="no-list work">
                                 <li>
                                     <h5>
-                                        NoUse School
-                                    </h5><span class="label label-success">2001-2002</span>
+                                        POSTECH (Pohang University of Science and Technology)
+                                    </h5><span class="label label-success">2012 - now</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        Creative IT Engineering / Doctor of Philosophy (Ph.D.)
                                     </p>
                                 </li>
                                 <li>
                                     <h5>
-                                        Super Useless College
-                                    </h5><span class="label label-warning">2002-2008</span>
+                                        Kyungpook National University
+                                    </h5><span class="label label-info">2002 - 2008</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
+                                        Computer Science & Engineering / Bachelor of Engineering
                                     </p>
                                 </li>
                             </ul>
@@ -205,68 +251,318 @@
                                     Skills
                                 </h3>
                                 <h5>
-                                    Software
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>Photoshop</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Illustrator</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>InDesign</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 40%"><span>Firework</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 70%"><span>Dreamweaver</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 60%"><span>Microsoft Office</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 65%"><span>Linux</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Design
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>User Interface</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Typography</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>Web Applications</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
                                     Programming Language
                                 </h5>
                                 <div class="meter emerald">
-                                    <span style="width: 53.3%"><span>HTML/CSS</span></span>
+                                    <span style="width: 100%"><span>HTML/CSS</span></span>
                                 </div>
                                 <div class="meter carrot">
-                                    <span style="width: 80%"><span>PHP/MySql</span></span>
+                                    <span style="width: 100%"><span>PHP</span></span>
                                 </div>
                                 <div class="meter wisteria">
-                                    <span style="width: 95%"><span>jQuery/JavaScript</span></span>
+                                    <span style="width: 100%"><span>jQuery/JavaScript</span></span>
                                 </div>
                                 <div class="meter sunflower">
-                                    <span style="width: 75%"><span>Ruby</span></span>
+                                    <span style="width: 100%"><span>C/C++</span></span>
+                                </div>
+                                <div class="meter midnight">
+                                    <span style="width: 100%"><span>Java/JSP/Android</span></span>
+                                </div>
+                                <div class="meter pomengrate">
+                                    <span style="width: 100%"><span>Mysql/PostgreSQL/MongoDB</span></span>
                                 </div>
                                 <div class="meter asbestos">
-                                    <span style="width: 82%"><span>Python</span></span>
+                                    <span style="width: 100%"><span>Python/Django</span></span>
                                 </div>
+                                <div class="break"></div>
+                                <h5>                                    
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div> -->
+
+                <div id="research">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <h3>
+                                프로젝트
+                            </h3>
+                            <ul class="no-list work">
+
+                                <li>
+                                    <h5>
+                                        Development of rating program for LKAS (Lane Keeping Assist System) based on the statistical analysis of LKAS data
+
+                                    </h5><span class="label label-success">2016.06 - now</span>
+                                    <p>
+                                        Co-work: Hyundai Motor Company<br>
+                                        Related keywords: Autonomous car, LKAS, Human Factors, Statistical Analysis<br>
+                                        
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        A Study on the Multi-Device Usage of Millennials
+
+                                    </h5><span class="label label-success">2016.06 - now</span>
+                                    <p>
+                                        Co-work: Samsung Electronics<br>
+                                        Related keywords: User scenario, User experience, Multi-device <br>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        Research on the Development of Embodied Participatory Simulation and its Effects from Embodied Cognition Perspectives
+                                    </h5><span class="label label-info">2015.07 - 2016.02</span>
+                                    <p>
+                                        Related keywords: VR, AR, Gestures with hand<Br>
+                                        Publication: [12]
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        POA: Designing a Gamification-Based Social Learning Application
+                                    </h5><span class="label label-info">2014.07 - 2016.02</span>
+                                    <p>
+                                        Co-work: Ajou University<br>
+                                        Related keywords: Rapid prototype, Design for children, Gamification, Social Network Service<br>
+                                        Publication: [6], [7], [8], [9]
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        MOMMASEE: IoT based Smart Feeding System
+                                    </h5><span class="label label-info">2015.02 - 2016.02</span>
+                                    <p>
+                                        Awards: 1st Prize at Startup Business Idea Contest<br>
+                                        Related keywords: Internet of Things, Rapid prototype, Service development<br>
+                                        Publication: [10]
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        BEEMEAL: Mobile application helping job seekers
+                                    </h5><span class="label label-info">2014.01 - 2015.02</span>
+                                    <p>
+                                        Co-work: IlgwaSaram Inc.<br>
+                                        Related keywords: Data crawling, Recommender system, Text mining<br>
+                                        Publication: [11]
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        Web-page Clustering Method focusing on Similarity Measures
+                                    </h5><span class="label label-info">2014.03 - 2014.10</span>
+                                    <p>
+                                        Co-work: National Security Research Institute<br>
+                                        Related keywords: Machine Learning, Web mining, Statistical analysis<br>
+                                        Publication: TBA
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h5>
+                                        Dynamic feedback of "Like" button on Facebook environment
+                                    </h5><span class="label label-info">2013.10 - 2014.05</span>
+                                    <p>
+                                        Related keywords: Social Network Service, Human factors<br>
+                                        Publication: [1], [3]
+                                    </p>
+                                </li>
+                                
+                                <li>
+                                    <h5>
+                                        i-LinK: Service Model for increasing the competitiveness of Korean waves
+                                    </h5><span class="label label-info">2013.03 - 2013.11</span>
+                                    <p>
+                                        <br>
+                                        Awards: 2nd Prize at Business Plan Contest with Knowledge Service<br>
+                                        Related Keywords: Rapid prototype, Service development
+                                    </p>
+                                </li>
+                               
+                            </ul>
+
+                        </div>
+                        <div class="g1">
+                            <div class="sidebar">
+                                <h3>
+                                    Interests
+                                </h3>
+                                <h6>
+                                    IT 그리고 사람
+
+                                </h6>
+                                <div class="meter emerald">
+                                    <span style="width: 100%"><span>인간-컴퓨터 상호작용</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 100%"><span>사용자 경험</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 100%"><span>기계 학습</span></span>
+                                </div>
+                                <div class="meter midnight">
+                                    <span style="width: 100%"><span>인간 공학</span></span>
+                                </div>
+                                <div class="meter pomengrate">
+                                    <span style="width: 100%"><span>가상, 증강 현실</span></span>
+                                </div>                                                                
                             </div>
                         </div>
                     </section>
                 </div>
               <!-- End Resume Tab Data -->
+
+
+
+
               <!-- Portfolio Tab Data -->
                 <div id="portfolio">
+                    <section class="clearfix">
+                        <div class="g0">
+                            <h3>
+                                Conference
+                            </h3>
+                            <ul class="no-list work">                               
+                                
+                                <li>
+                                    <p>
+                                        <b>[13] Are Massive Open Online Courses (MOOCs) Really Open to Everyone?: A Study of Accessibility Evaluation from the Perspective of Universal Design for Learning<br></b>
+                                        <i><b>Kyudong Park</b>, Hyo Jin Kim, and Hyo-Jeong So</i><br>
+                                        Proceedings of the 27th ACM Conference on HCI Korea (HCIK '16)                                      
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[12] Designing a Multi-user Interactive Simulation Using AR Glasses<br></b>
+                                        <i>Seungjae Oh, <b>Kyudong Park</b>, Soonmo Kwon, and Hyo-Jeong So</i><br>
+                                        Proceedings of the 10th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '16)
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[11] Inquiry-based corporate ranking display system for a mobile and its impact on diversity of the job market<br></b>
+                                        <i>Ki-Young Shin, <b>Kyudong Park</b>, Hyo-Jeong So, and Jong-Hyeok Lee</i><br>
+                                        Proceedings of Korea Computer Congress (KCC '15)
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[10] Proposal of Smart Feeding System for infants and toddlers using Internet of Things (IoT)<br></b>
+                                        <i><b>Kyudong Park</b>, Ki-Young Shin, Kiwoon Shin, and Hyo-Jeong So</i><br>
+                                        Proceedings of Korea Computer Congress (KCC '15)
+                                    </p>
+                                </li>
+
+
+                                <li>
+                                    <p>
+                                        <b>[9] Children as Participatory Designers of a New Type of Mobile Social Learning Application<br></b>
+                                        <i>Soonmo Kwon, Seungjae Oh, <b>Kyudong Park</b>, Seiyoung Kim, and Hyo-Jeong So</i><br>
+                                        Proceedings of the 17th International Conference on Human-Computer Interaction with Mobile Devices and Services Adjunct (MobileHCI ’15)                                        
+                                    </p>
+                                </li>
+                                
+                                <li>
+                                    <p>
+                                        <b>[8] Towards Designing a Mobile Social Learning Application with Meaningful Gamification Strategies<br></b>
+                                        <i>Sei-young Kim, Hyo-Jeong So, Soonmo Kwon, Seungjae Oh, <b>Kyudong Park</b>, MinJin Ko, JaeWon Yoo, and Gyuhwan OH<br></i>
+                                        Proceedings of the 15th IEEE International Conference on Advanced Learning Technologies (ICALT 2015)                                        
+                                    </p>
+                                </li>
+
+
+                                <li>
+                                    <p>
+                                        <b>[7] From Crowdsourcing to Crowdlearning through a Pin-based Annotation System<br></b>
+                                        <i>Seungjae Oh, <b>Kyudong Park</b>, and Hyo-Jeong So<br></i>
+                                        The 11th International Conference of Computer Supported Collaborative Learning (CSCL 2015) - Workshop : Designing Futures for Learning in the Crowd: New Challenges and Opportunities for CSCL (non-proceeding)
+                                    </p>
+                                </li>
+
+
+                                <li>
+                                    <p>
+                                        <b>[6] Designing a Mobile Social Learning Application for Children's Transformative Play<br></b>
+                                        <i>Hyo-Jeong So, Soonmo Kwon, Seungjae Oh, <b>Kyudong Park</b>, and Sei-young Kim <br></i>
+                                        The 33rd annual ACM conference on Human factors in computing systems (CHI 2015) - Workshop : Supporting Children to Engage in Play for Wellbeing (non-proceeding)
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[5] Investigating Needs and Revisiting the Accessibility Guideline of Mobile Application for People with Visual Impairment<br></b>
+                                        <i><b>Kyudong Park</b>, Taedong Goh, and Hyo-Jeong So<br></i>
+                                        <font color="blue"><b>Best Paper Award</b></font>, <font color="green"><b>Presenter</b></font><br>
+                                        Proceedings of the 26th ACM Conference on HCI Korea (HCIK '15)
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[4] Identifying User Perceptions Toward Integrating Mobile Applications in Science Education<br></b>
+                                        <i>Hyo-Jeong SO, Hye-Gyeong YOON, Hyeong-Shin CHOI, Heung-Chang LEE, and <b>Kyudong PARK</b><br></i>
+                                        <font color="green"><b>Presenter</b></font><br>
+                                        Proceedings of the 22nd International Conference on Computers in Education (ICCE 2014)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>[3] Dynamic Feedback Mechanism for Maximizing Interaction in Online Social Network Services<br></b>
+                                        <i><b>Kyudong Park</b>, Seungjae Oh, Heung-Chang Lee, and Hyo-Jeong So <br></i>
+                                        <font color="green"><b>Presenter</b></font><br>
+                                        Proceedings of the 2014 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2014)
+                                    </p>
+                                </li>
+                                
+                                <li>
+                                    <p>
+                                        <b>[2] A True Heart: Interactive Media Art for Communication of ‘Approach’</b><br>
+                                        <i><b>Kyudong Park</b>, Hyeong-woo Cho, Dong-hun Ahn, Han-seul Cho, and Jintaek Kim</i>
+                                        Proceedings of the 25th Conference on HCI Korea (HCIK '14), pp. 917-920
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>[1] Synchronous Feedback Mechanism in Online Social Rating Systems : Examining Social Interaction Effect<br></b>
+                                        <i><b>Kyudong Park</b>, Seungjae Oh, Bora Kang, and Hyo-Jeong So<br></i>
+                                        Proceedings of the 25th Conference on HCI Korea (HCIK '14), pp. 785-788
+                                    </p>
+                                </li>
+                                
+                               
+                            </ul>
+
+                            <h3>
+                                Journal
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <p>
+                                        1. Work in progress
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </section>
+                </div>
+
+                <!-- project Tab Data -->
+ <!--                <div id="project3">
                     <section class="clearfix">
                         <div class="g1">
                             <div class="image">
@@ -331,8 +627,9 @@
                         </div>
                         
                     </section>
-                </div>
-              <!-- End Portfolio Data -->
+                </div> -->
+              <!-- End project Data -->
+
               <!-- Contact Tab Data -->
                 <div id="contact">
                     <section class="clearfix">
@@ -343,18 +640,18 @@
                             </div>
                             <div class="sny-icon-content">
                               <h4>My Address</h4>
-                              <p>Some Apartment 405 in a jungle nearby a restaurant</p>
+                              <p>77 Cheongam-Ro, Nam-Gu, Pohang, Gyeongbuk, Korea, 790-784</p>
                             </div>
                          </div>
                        </div>
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="icon-phone"></i>
+                              <i class="icon-envelope"></i>
                             </div>
                             <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>999-9999-999<br/>999-1112-999</p>
+                              <h4>My Email</h4>
+                              <p>kdpark(at)postech.ac.kr</p>
                             </div>
                          </div>
                        </div>
@@ -365,7 +662,7 @@
                             </div>
                             <div class="sny-icon-content">
                               <h4>About Me</h4>
-                              <p>I love to work, so don't be shy, i am just an email away.</p>
+                              <p>co-work은 언제나 환영합니다</p>
                             </div>
                          </div>
                        </div>
@@ -377,11 +674,7 @@
             </div>
         </div>
         <!-- End Tab Container -->
-        <footer>
-            <p>
-                Designed with lots of love at <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>. Just <a href="http://www.mrova.com/free-one-page-responsive-html-resume-template/">Click me to download</a> this template for free :).
-            </p>
-        </footer>
+        
     </div><!-- #main -->
 </div><!-- #main-container -->
 
