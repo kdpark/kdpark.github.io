@@ -212,7 +212,7 @@ a img{
   height: 560px;
   width: auto;
   background-color: #f0f0f0;
-  background: url('images/print.jpg') center  no-repeat;
+  background: url('images/print.png') center no-repeat;
   background-size: cover;
 }
 
