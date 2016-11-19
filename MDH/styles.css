@@ -198,12 +198,12 @@ a img{
 
 .modu-meeting {
   position: relative;
-  height: 560px;
-  width: auto;
+  height:560px;
+  width: 1500px;
   background-color: #f0f0f0;
   background: url('images/meeting.png') center 50% no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: 100% 0%
 
 }
 
@@ -212,9 +212,8 @@ a img{
   height: 560px;
   width: auto;
   background-color: #f0f0f0;
-  background: url('images/print.jpg') center 30% no-repeat;
+  background: url('images/print.jpg') center  no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 
