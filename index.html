@@ -80,6 +80,7 @@
   ;e.amplitude=n})(window,document);
 
   amplitude.getInstance().init("f109e8d4ca642ef048d93cc0dc99801c");
+    amplitude.getInstance().logEvent('first-access');
 </script>
 
 </head>
@@ -105,20 +106,20 @@
         <div id="tab-container" class="tab-container">
           <!-- Tab List -->
             <ul class='etabs'>
-                <li class='tab' id="tab-about">
+                <li class='tab' id="tab-about" onclick = "amplitude.getInstance().logEvent('about me');">
                   <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#research"><i class="icon-file-text"></i><span> Research</span></a>
+                  <a href="#research" onclick = "amplitude.getInstance().logEvent('Research');"><i class="icon-file-text"></i><span> Research</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Publication</span></a>
+                  <a href="#portfolio" onclick = "amplitude.getInstance().logEvent('Publication');"><i class="icon-heart"></i><span> Publication</span></a>
                 </li>
                 <!-- <li class='tab'>
                   <a href="#proejct3"><i class="icon-heart"></i><span> Project</span></a>
                 </li> -->
                 <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                  <a href="#contact" onclick = "amplitude.getInstance().logEvent('Contact');"><i class="icon-envelope"></i><span> Contact</span></a>
                 </li>
                 
             </ul>
