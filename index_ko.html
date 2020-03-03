@@ -79,7 +79,7 @@
   ;e.amplitude=n})(window,document);
 
   amplitude.getInstance().init("f109e8d4ca642ef048d93cc0dc99801c");
-    //amplitude.getInstance().logEvent('first-access');
+    //amplitude.getInstance().logEvent('first-access-ko');
 </script>
   
 </head>
@@ -106,19 +106,19 @@
           <!-- Tab List -->
             <ul class='etabs'>
                 <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> 저는</span></a>
+                  <a href="#about"  onclick = "amplitude.getInstance().logEvent('about me - ko');"><i class="icon-user"></i><span> 저는</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#research"><i class="icon-file-text"></i><span> 프로젝트</span></a>
+                  <a href="#research"  onclick = "amplitude.getInstance().logEvent('project - ko');"><i class="icon-file-text"></i><span> 프로젝트</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> 논문</span></a>
+                  <a href="#portfolio" onclick = "amplitude.getInstance().logEvent('publication - ko');"><i class="icon-heart"></i><span> 논문</span></a>
                 </li>
                 <!-- <li class='tab'>
                   <a href="#proejct3"><i class="icon-heart"></i><span> Project</span></a>
                 </li> -->
                 <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> 연락처 </span></a>
+                  <a href="#contact" onclick = "amplitude.getInstance().logEvent('contact - ko');"><i class="icon-envelope"></i><span> 연락처 </span></a>
                 </li>
                 
             </ul>
